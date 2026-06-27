@@ -23,13 +23,13 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore ./DotNet_Azure_App_1/DotNet_Azure_App_1.csproj
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build ./DotNet_Azure_App_1/DotNet_Azure_App_1.csproj --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish DotNet_Azure_App_1.csproj -c Release -o ./publish
+        run: dotnet publish ./DotNet_Azure_App_1/DotNet_Azure_App_1.csproj --configuration Release --no-build --output ./publish
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
