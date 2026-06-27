@@ -9,6 +9,6 @@ namespace DotNet_Azure_App_1.Data
         {
         }
 
-        public DbSet<AzureUser> AzureUsers =>Set<AzureUser>();
+        public DbSet<AzureUser> AzureUsers => Set<AzureUser>();
     }
 }
