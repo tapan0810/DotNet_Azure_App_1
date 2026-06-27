@@ -3,7 +3,7 @@ name: Build and Deploy ASP.NET Core App to Azure Web App
 on:
   push:
     branches:
-      - main
+      - "**"
 
 env:
   AZURE_WEBAPP_NAME: Azure-App-1-
