@@ -4,6 +4,7 @@ namespace DotNet_Azure_App_1.Services
 {
     public interface IAzureUserService
     {
+
         public Task<IEnumerable<AzureUser>> GetAllUsersAsync();
         public Task<AzureUser?> GetUserByIdAsync(int id);
         public Task<AzureUser> CreateUserAsync(AzureUser user);
