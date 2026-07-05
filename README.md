@@ -1,4 +1,4 @@
-# 🚀 ASP.NET Core Web API with Azure CI/CD
+ # 🚀 ASP.NET Core Web API with Azure CI/CD
 
 A production-ready ASP.NET Core Web API demonstrating CRUD operations with Entity Framework Core, SQL Server, and automated deployment to Azure App Service using GitHub Actions.
 
